@@ -111,14 +111,6 @@
         <el-button type="primary" @click="editUserInfo">确 定</el-button>
       </span>
     </el-dialog>
-    <!-- 删除用户弹框 -->
-    <el-dialog title="删除用户" :visible.sync="delDialogVisible" width="50%">
-      <span>是否确认删除?</span>
-      <span slot="footer" class="dialog-footer">
-        <el-button @click="delDialogVisible = false">取 消</el-button>
-        <el-button type="primary">确 定</el-button>
-      </span>
-    </el-dialog>
     <!--分配角色对话框 -->
     <el-dialog
       title="分配角色"

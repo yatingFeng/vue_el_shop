@@ -244,7 +244,7 @@ export default {
       this.editRoleVisible = true;
       const { data: res } = await this.$http.get("roles/" + id);
       if (res.meta.status !== 200) {
-        return yhis.$message.error("查询角色信息失败");
+        return this.$message.error("查询角色信息失败");
       }
       // 查询正确时，将查询到的数据展示到表单中
       this.editRoleForm = res.data;
@@ -297,7 +297,7 @@ export default {
       const { data: res } = await this.$http.delete("roles/" + id);
 
       if (res.meta.status !== 200) {
-        this.this.$message.error("删除失败");
+        return this.$message.error("删除失败");
       }
       //  删除成功后提示并刷新列表
       this.$message.success("删除成功");
@@ -321,7 +321,7 @@ export default {
         `roles/${role.id}/rights/${rightId}`
       );
       if (res.meta.status !== 200) {
-        this.$messgae.error("删除失败");
+        this.$message.error("删除失败");
       }
       this.$message.success("删除成功");
       // 不建议重新获取角色列表(重新渲染权限列表的值可避免刷新页面的bug)
