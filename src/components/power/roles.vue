@@ -315,7 +315,7 @@ export default {
         }
       ).catch(err => err);
       if (confirmResult !== "confirm") {
-        this.$message.info("取消了删除！");
+        return this.$message.info("取消了删除！");
       }
       const { data: res } = await this.$http.delete(
         `roles/${role.id}/rights/${rightId}`
