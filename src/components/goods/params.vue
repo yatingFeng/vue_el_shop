@@ -413,9 +413,9 @@ export default {
           }
         );
         if (res.meta.status !== 200) {
-          return this.$message.error("提交参数失败！");
+          return this.$message.error("修改参数失败！");
         }
-        this.$message.success("提交参数成功！");
+        this.$message.success("修改参数成功！");
     },
     // 删除属性标签
    async handleClose(index,row){

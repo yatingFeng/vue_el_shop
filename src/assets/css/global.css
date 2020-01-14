@@ -19,3 +19,13 @@ html,body,#app{
 .el-pagination{
   margin-top: 15px;
 }
+.el-steps{
+  /* 上下15px 左右0 */
+  margin: 15px 0;
+}
+.el-step__title.is-wait{
+  font-size: 12px;
+}
+.ql-editor{
+  min-height: 280px;
+}
