@@ -294,7 +294,7 @@ export default {
       this.editDialogVisible = true;
       const { data: res } = await this.$http.get("users/" + id);
       if (res.meta.status !== 200) {
-        return yhis.$message.error("查询用户信息失败");
+        return this.$message.error("查询用户信息失败");
       }
       // 查询正确时，将查询到的数据展示到表单中
       this.editForm = res.data;
