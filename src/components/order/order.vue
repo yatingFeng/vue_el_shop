@@ -177,7 +177,7 @@ export default {
       }
       this.progressInfo = res.data;
       this.progressDialogVisible = true;
-    }
+    },
   }
 };
 </script>
